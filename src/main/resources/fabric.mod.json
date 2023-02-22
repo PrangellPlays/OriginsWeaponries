@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "originsweaponries",
+  "version": "${version}",
+
+  "name": "Origins Weaponries",
+  "description": "The Origins Weaponries Mod",
+  "authors": [
+    "PrangellPlays"
+  ],
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.prangellplays.originsweaponries.OriginsWeaponries"
+    ],
+    "client": [
+      "net.prangellplays.originsweaponries.OriginsWeaponriesClient"
+    ],
+    "fabric-datagen": [
+      "net.prangellplays.originsweaponries.OriginsWeaponriesDataGenerator"
+    ]
+  },
+  "mixins": [
+    "originsweaponries.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
